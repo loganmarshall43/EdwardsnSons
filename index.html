@@ -2,525 +2,253 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Edwards & Sons Lawncare | Free Quotes</title>
-  <meta name="description" content="Edwards & Sons Lawncare — reliable mowing, cleanup, and landscaping. Get a fast, free quote." />
+  <meta name="description" content="Edwards & Sons Lawncare — local services across Beaver, Iron, and Washington counties. Get a free quote." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Sticky top bar -->
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#top">
-        <span class="brand__mark">E&S</span>
-        <span class="brand__text">
-          <strong>Edwards & Sons</strong>
-          <small>Lawncare</small>
-        </span>
-      </a>
+  <!-- Simple Top Nav -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top">Edwards &amp; Sons Lawncare</a>
 
       <nav class="nav">
+        <a href="#areas">Service Areas</a>
         <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
+        <a href="#quote">Get a Quote</a>
         <a href="#contact">Contact</a>
       </nav>
-
-      <button class="btn btn--primary btn--sm" data-open-quote>
-        Get a Free Quote
-      </button>
-
-      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <!-- Mobile menu -->
-    <div class="mobile-menu" hidden>
-      <a href="#services">Services</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <button class="btn btn--primary" data-open-quote>Get a Free Quote</button>
     </div>
   </header>
 
-  <!-- Hero -->
   <main id="top">
+
+    <!-- HERO (cover photo style) -->
     <section class="hero">
       <div class="hero__overlay"></div>
 
-      <!-- Replace the image URL in styles.css .hero with your photo -->
       <div class="container hero__content">
-        <div class="hero__copy">
-          <p class="badge">Local • Reliable • Affordable</p>
-          <h1>Edwards &amp; Sons Lawncare</h1>
-          <p class="subhead">
-            Clean cuts, crisp edges, and dependable service—weekly mowing, cleanups, and landscaping.
-          </p>
+        <h1>Edwards &amp; Sons Lawncare</h1>
+        <p class="subhead">Reliable local service in Southern Utah. Quick quotes, clean work, fair pricing.</p>
 
-          <div class="hero__actions">
-            <button class="btn btn--primary" data-open-quote>Get a Free Quote</button>
-            <a class="btn btn--ghost" href="#services">View Services</a>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#quote">Get a Free Quote</a>
+          <a class="btn" href="#services">View Services</a>
+        </div>
+
+        <p class="hero__note">
+          Serving <strong>Beaver County</strong>, <strong>Iron County</strong>, and <strong>Washington County</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICE AREAS -->
+    <section class="section" id="areas">
+      <div class="container">
+        <h2>Service Areas</h2>
+        <p class="muted">Select a county to see what we offer there.</p>
+
+        <div class="tabs" role="tablist" aria-label="Service areas">
+          <button class="tab is-active" data-area="beaver" aria-selected="true">Beaver County</button>
+          <button class="tab" data-area="iron" aria-selected="false">Iron County</button>
+          <button class="tab" data-area="washington" aria-selected="false">Washington County</button>
+        </div>
+
+        <div class="panels">
+
+          <!-- Beaver -->
+          <article class="panel is-active" data-panel="beaver">
+            <h3>Beaver County Services</h3>
+            <ul class="list">
+              <li>Lawn Mowing</li>
+              <li>Bush Trimming</li>
+              <li>Sprinkler Repair</li>
+              <li>Window Cleaning</li>
+              <li>Aeration</li>
+              <li>De-Thatching</li>
+            </ul>
+
+            <div class="callout">
+              <p><strong>Pricing estimate placeholder:</strong> (Add ranges later)</p>
+              <a class="btn btn--primary" href="#quote" data-prefill-area="Beaver County">Get a Quote</a>
+            </div>
+          </article>
+
+          <!-- Iron -->
+          <article class="panel" data-panel="iron">
+            <h3>Iron County Services</h3>
+            <ul class="list">
+              <li>Aeration</li>
+            </ul>
+
+            <div class="callout">
+              <p><strong>Pricing estimate placeholder:</strong> (Add ranges later)</p>
+              <a class="btn btn--primary" href="#quote" data-prefill-area="Iron County">Get a Quote</a>
+            </div>
+          </article>
+
+          <!-- Washington -->
+          <article class="panel" data-panel="washington">
+            <h3>Washington County Services</h3>
+            <ul class="list">
+              <li>Aeration</li>
+            </ul>
+
+            <div class="callout">
+              <p><strong>Pricing estimate placeholder:</strong> (Add ranges later)</p>
+              <a class="btn btn--primary" href="#quote" data-prefill-area="Washington County">Get a Quote</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES (placeholder section that we can grow later) -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="muted">
+          We’ll keep this simple for now — later we can add pricing cards, photos, and “most popular” packages.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Beaver County</h3>
+            <p class="muted">Full service list available.</p>
+            <p class="small">Placeholder for service breakdown + pricing ranges.</p>
           </div>
-
-          <div class="hero__trust">
-            <div class="trust-item">
-              <strong>Fast response</strong>
-              <span>Same-day replies when possible</span>
-            </div>
-            <div class="trust-item">
-              <strong>Up-front estimates</strong>
-              <span>No surprises—clear pricing ranges</span>
-            </div>
-            <div class="trust-item">
-              <strong>Quality work</strong>
-              <span>We treat your yard like our own</span>
-            </div>
+          <div class="card">
+            <h3>Iron County</h3>
+            <p class="muted">Aeration</p>
+            <p class="small">Placeholder for aeration details + pricing ranges.</p>
           </div>
-        </div>
-
-        <aside class="hero__card">
-          <h3>Quick Contact</h3>
-          <p class="muted">Call/Text:</p>
-          <a class="link-big" href="tel:+18015551234">(801) 555-1234</a>
-
-          <p class="muted">Email:</p>
-          <a href="mailto:info@edwardssonslawncare.com">info@edwardssonslawncare.com</a>
-
-          <hr class="sep" />
-          <p class="muted">Serving:</p>
-          <p><strong>Ogden • Layton • Farmington • Logan</strong></p>
-
-          <button class="btn btn--primary w-100" data-open-quote>Get a Free Quote</button>
-          <small class="fineprint">Estimates depend on lot size & conditions.</small>
-        </aside>
-      </div>
-    </section>
-
-    <!-- Location Tabs -->
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section__head">
-          <h2>Services &amp; Pricing Estimates</h2>
-          <p class="muted">
-            Choose your location to see typical services and price ranges. Final price depends on lot size,
-            access, and yard condition.
-          </p>
-        </div>
-
-        <div class="tabs" role="tablist" aria-label="Locations">
-          <button class="tab is-active" role="tab" aria-selected="true" data-location="ogden">Ogden</button>
-          <button class="tab" role="tab" aria-selected="false" data-location="layton">Layton</button>
-          <button class="tab" role="tab" aria-selected="false" data-location="farmington">Farmington</button>
-          <button class="tab" role="tab" aria-selected="false" data-location="logan">Logan</button>
-        </div>
-
-        <div class="tab-panels">
-
-          <!-- Ogden -->
-          <article class="panel is-active" data-panel="ogden">
-            <div class="panel__grid">
-              <div class="panel__block">
-                <h3>Routine Lawn Care</h3>
-                <ul class="list">
-                  <li><strong>Weekly mowing:</strong> $35–$65</li>
-                  <li><strong>Bi-weekly mowing:</strong> $45–$85</li>
-                  <li><strong>Edge + blow-off add-on:</strong> $10–$20</li>
-                </ul>
-              </div>
-
-              <div class="panel__block">
-                <h3>Cleanups &amp; Seasonal</h3>
-                <ul class="list">
-                  <li><strong>Spring/Fall cleanup:</strong> $150+</li>
-                  <li><strong>Leaf removal:</strong> $75+</li>
-                  <li><strong>Haul-away / dump fee:</strong> as needed</li>
-                </ul>
-              </div>
-
-              <div class="panel__block">
-                <h3>Landscaping</h3>
-                <ul class="list">
-                  <li><strong>Mulch refresh:</strong> $120+</li>
-                  <li><strong>Trimming/shrubs:</strong> $60+</li>
-                  <li><strong>Weed control:</strong> $40+</li>
-                </ul>
-              </div>
-
-              <div class="panel__cta">
-                <p><strong>Want an exact price?</strong> Send your address and what you need.</p>
-                <button class="btn btn--primary" data-open-quote data-prefill-location="Ogden">
-                  Get a Quote for Ogden
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Layton -->
-          <article class="panel" data-panel="layton">
-            <div class="panel__grid">
-              <div class="panel__block">
-                <h3>Routine Lawn Care</h3>
-                <ul class="list">
-                  <li><strong>Weekly mowing:</strong> $40–$70</li>
-                  <li><strong>Bi-weekly mowing:</strong> $50–$95</li>
-                  <li><strong>Edge + blow-off add-on:</strong> $10–$20</li>
-                </ul>
-              </div>
-
-              <div class="panel__block">
-                <h3>Cleanups &amp; Seasonal</h3>
-                <ul class="list">
-                  <li><strong>Spring/Fall cleanup:</strong> $175+</li>
-                  <li><strong>Leaf removal:</strong> $85+</li>
-                  <li><strong>Haul-away / dump fee:</strong> as needed</li>
-                </ul>
-              </div>
-
-              <div class="panel__block">
-                <h3>Landscaping</h3>
-                <ul class="list">
-                  <li><strong>Mulch refresh:</strong> $140+</li>
-                  <li><strong>Trimming/shrubs:</strong> $70+</li>
-                  <li><strong>Weed control:</strong> $45+</li>
-                </ul>
-              </div>
-
-              <div class="panel__cta">
-                <p><strong>Want an exact price?</strong> Send your address and what you need.</p>
-                <button class="btn btn--primary" data-open-quote data-prefill-location="Layton">
-                  Get a Quote for Layton
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Farmington -->
-          <article class="panel" data-panel="farmington">
-            <div class="panel__grid">
-              <div class="panel__block">
-                <h3>Routine Lawn Care</h3>
-                <ul class="list">
-                  <li><strong>Weekly mowing:</strong> $45–$80</li>
-                  <li><strong>Bi-weekly mowing:</strong> $60–$110</li>
-                  <li><strong>Edge + blow-off add-on:</strong> $10–$25</li>
-                </ul>
-              </div>
-
-              <div class="panel__block">
-                <h3>Cleanups &amp; Seasonal</h3>
-                <ul class="list">
-                  <li><strong>Spring/Fall cleanup:</strong> $200+</li>
-                  <li><strong>Leaf removal:</strong> $95+</li>
-                  <li><strong>Haul-away / dump fee:</strong> as needed</li>
-                </ul>
-              </div>
-
-              <div class="panel__block">
-                <h3>Landscaping</h3>
-                <ul class="list">
-                  <li><strong>Mulch refresh:</strong> $160+</li>
-                  <li><strong>Trimming/shrubs:</strong> $80+</li>
-                  <li><strong>Weed control:</strong> $50+</li>
-                </ul>
-              </div>
-
-              <div class="panel__cta">
-                <p><strong>Want an exact price?</strong> Send your address and what you need.</p>
-                <button class="btn btn--primary" data-open-quote data-prefill-location="Farmington">
-                  Get a Quote for Farmington
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Logan -->
-          <article class="panel" data-panel="logan">
-            <div class="panel__grid">
-              <div class="panel__block">
-                <h3>Routine Lawn Care</h3>
-                <ul class="list">
-                  <li><strong>Weekly mowing:</strong> $35–$70</li>
-                  <li><strong>Bi-weekly mowing:</strong> $45–$100</li>
-                  <li><strong>Edge + blow-off add-on:</strong> $10–$20</li>
-                </ul>
-              </div>
-
-              <div class="panel__block">
-                <h3>Cleanups &amp; Seasonal</h3>
-                <ul class="list">
-                  <li><strong>Spring/Fall cleanup:</strong> $160+</li>
-                  <li><strong>Leaf removal:</strong> $80+</li>
-                  <li><strong>Haul-away / dump fee:</strong> as needed</li>
-                </ul>
-              </div>
-
-              <div class="panel__block">
-                <h3>Landscaping</h3>
-                <ul class="list">
-                  <li><strong>Mulch refresh:</strong> $130+</li>
-                  <li><strong>Trimming/shrubs:</strong> $70+</li>
-                  <li><strong>Weed control:</strong> $45+</li>
-                </ul>
-              </div>
-
-              <div class="panel__cta">
-                <p><strong>Want an exact price?</strong> Send your address and what you need.</p>
-                <button class="btn btn--primary" data-open-quote data-prefill-location="Logan">
-                  Get a Quote for Logan
-                </button>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section section--alt" id="testimonials">
-      <div class="container">
-        <div class="section__head">
-          <h2>What Customers Say</h2>
-          <p class="muted">Real service, real results.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <div class="stars" aria-label="5 star review">★★★★★</div>
-            <p>“Always on time and our lawn looks amazing every week. Super easy to work with.”</p>
-            <p class="muted"><strong>— Sarah M.</strong></p>
-          </article>
-
-          <article class="card">
-            <div class="stars" aria-label="5 star review">★★★★★</div>
-            <p>“Clean edges, no mess left behind, and the price is fair. Highly recommend.”</p>
-            <p class="muted"><strong>— Mike R.</strong></p>
-          </article>
-
-          <article class="card">
-            <div class="stars" aria-label="5 star review">★★★★★</div>
-            <p>“We had a big cleanup and they knocked it out fast. Yard looks brand new.”</p>
-            <p class="muted"><strong>— Jessica T.</strong></p>
-          </article>
-        </div>
-
-        <div class="center">
-          <button class="btn btn--primary" data-open-quote>Get a Free Quote</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="section" id="gallery">
-      <div class="container">
-        <div class="section__head">
-          <h2>Gallery</h2>
-          <p class="muted">Swap these placeholders with real job photos.</p>
-        </div>
-
-        <div class="gallery">
-          <figure class="shot"><div class="shot__ph">Photo 1</div><figcaption>Fresh cut + edging</figcaption></figure>
-          <figure class="shot"><div class="shot__ph">Photo 2</div><figcaption>Cleanup results</figcaption></figure>
-          <figure class="shot"><div class="shot__ph">Photo 3</div><figcaption>Mulch refresh</figcaption></figure>
-          <figure class="shot"><div class="shot__ph">Photo 4</div><figcaption>Shrub trimming</figcaption></figure>
-          <figure class="shot"><div class="shot__ph">Photo 5</div><figcaption>Before / After</figcaption></figure>
-          <figure class="shot"><div class="shot__ph">Photo 6</div><figcaption>Weekly maintenance</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section section--alt" id="about">
-      <div class="container split">
-        <div>
-          <h2>About Edwards &amp; Sons</h2>
-          <p>
-            We’re a family-run lawn care company focused on dependable scheduling, clean work,
-            and friendly service. Whether you need weekly mowing or a one-time cleanup, we’ll
-            keep your yard looking sharp.
-          </p>
-          <ul class="checklist">
-            <li>Reliable communication</li>
-            <li>Attention to detail (edges, blow-off, clean finish)</li>
-            <li>Up-front estimates and fair pricing</li>
-          </ul>
-
-          <button class="btn btn--primary" data-open-quote>Get a Free Quote</button>
-        </div>
-
-        <div class="about-card">
-          <h3>Service Hours</h3>
-          <p><strong>Mon–Sat:</strong> 8am–6pm</p>
-          <p><strong>Sunday:</strong> Closed</p>
-          <hr class="sep"/>
-          <h3>Typical Turnaround</h3>
-          <p class="muted">Quotes within 24 hours when possible.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container split">
-        <div>
-          <h2>Contact</h2>
-          <p class="muted">Call/text for fastest response, or request a quote online.</p>
-
-          <div class="contact-box">
-            <div>
-              <p class="muted">Phone</p>
-              <a class="link-big" href="tel:+18015551234">(801) 555-1234</a>
-            </div>
-            <div>
-              <p class="muted">Email</p>
-              <a href="mailto:info@edwardssonslawncare.com">info@edwardssonslawncare.com</a>
-            </div>
-            <div>
-              <p class="muted">Business Email Tip</p>
-              <p><strong>Use a custom domain email</strong> (looks more professional than Gmail).</p>
-            </div>
+          <div class="card">
+            <h3>Washington County</h3>
+            <p class="muted">Aeration</p>
+            <p class="small">Placeholder for aeration details + pricing ranges.</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="form-card">
-          <h3>Request a Quote</h3>
-          <form id="quoteForm">
+    <!-- QUOTE (Formspree) -->
+    <section class="section" id="quote">
+      <div class="container">
+        <h2>Get a Free Quote</h2>
+        <p class="muted">Fill this out and we’ll reach out ASAP.</p>
+
+        <!-- Replace action with the Formspree endpoint -->
+        <form class="form" id="quoteForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form__row">
             <label>
               Name
               <input required name="name" type="text" placeholder="Your name" />
             </label>
-
             <label>
               Phone
               <input required name="phone" type="tel" placeholder="(###) ###-####" />
             </label>
+          </div>
 
+          <div class="form__row">
             <label>
               Email (optional)
               <input name="email" type="email" placeholder="you@email.com" />
             </label>
 
             <label>
-              Location
-              <select name="location" id="locationSelect">
-                <option>Ogden</option>
-                <option>Layton</option>
-                <option>Farmington</option>
-                <option>Logan</option>
+              County
+              <select name="county" id="countySelect" required>
+                <option value="Beaver County">Beaver County</option>
+                <option value="Iron County">Iron County</option>
+                <option value="Washington County">Washington County</option>
               </select>
             </label>
+          </div>
 
-            <label>
-              Address / Area
-              <input required name="address" type="text" placeholder="Street or neighborhood" />
-            </label>
+          <label>
+            Address / Area
+            <input required name="address" type="text" placeholder="Street or neighborhood" />
+          </label>
 
-            <label>
-              What do you need?
-              <textarea required name="details" rows="4" placeholder="Mowing, cleanup, trimming, mulch, etc."></textarea>
-            </label>
+          <label>
+            What service do you need?
+            <textarea required name="details" rows="4" placeholder="Example: Aeration, mowing, sprinkler repair, etc."></textarea>
+          </label>
 
-            <button class="btn btn--primary w-100" type="submit">
-              Submit Quote Request
-            </button>
-            <p class="fineprint">
-              This demo submits via mailto/text fallback. You can connect it to Formspree, Netlify Forms, or your own backend later.
-            </p>
-          </form>
+          <!-- helpful hidden field -->
+          <input type="hidden" name="_subject" value="New Quote Request - Edwards & Sons Lawncare" />
+
+          <button class="btn btn--primary" type="submit">Submit</button>
+
+          <p class="small muted">
+            Placeholder: After Formspree is connected, we can add a “success” message and nicer UX.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (placeholder) -->
+    <section class="section section--alt" id="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <p class="muted">Placeholder for reviews — add Google/Facebook reviews later.</p>
+
+        <div class="grid">
+          <div class="card">
+            <p class="stars">★★★★★</p>
+            <p>“Placeholder review text.”</p>
+            <p class="small muted">— Customer Name</p>
+          </div>
+          <div class="card">
+            <p class="stars">★★★★★</p>
+            <p>“Placeholder review text.”</p>
+            <p class="small muted">— Customer Name</p>
+          </div>
+          <div class="card">
+            <p class="stars">★★★★★</p>
+            <p>“Placeholder review text.”</p>
+            <p class="small muted">— Customer Name</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer__grid">
-        <div>
-          <div class="brand brand--footer">
-            <span class="brand__mark">E&S</span>
-            <span class="brand__text">
-              <strong>Edwards & Sons</strong>
-              <small>Lawncare</small>
-            </span>
-          </div>
-          <p class="muted">Professional lawn care in your area.</p>
-        </div>
-
-        <div>
-          <h4>Quick Links</h4>
-          <a href="#services">Services</a><br/>
-          <a href="#testimonials">Testimonials</a><br/>
-          <a href="#gallery">Gallery</a><br/>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <div>
-          <h4>Social</h4>
-          <div class="socials">
-            <a href="#" aria-label="Facebook">Facebook</a>
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="Google Business Profile">Google</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container footer__bottom">
-        <small>© <span id="year"></span> Edwards & Sons Lawncare. All rights reserved.</small>
-      </div>
-    </footer>
-  </main>
-
-  <!-- Quote Modal -->
-  <div class="modal" id="quoteModal" aria-hidden="true">
-    <div class="modal__backdrop" data-close-quote></div>
-    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal__close" aria-label="Close" data-close-quote>&times;</button>
-      <h3 id="modalTitle">Get a Free Quote</h3>
-      <p class="muted">Tell us what you need and we’ll get back to you.</p>
-
-      <form id="modalQuoteForm">
-        <label>
-          Name
-          <input required name="name" type="text" placeholder="Your name" />
-        </label>
-
-        <label>
-          Phone
-          <input required name="phone" type="tel" placeholder="(###) ###-####" />
-        </label>
-
-        <label>
-          Location
-          <select name="location" id="modalLocationSelect">
-            <option>Ogden</option>
-            <option>Layton</option>
-            <option>Farmington</option>
-            <option>Logan</option>
-          </select>
-        </label>
-
-        <label>
-          Address / Area
-          <input required name="address" type="text" placeholder="Street or neighborhood" />
-        </label>
-
-        <label>
-          Details
-          <textarea required name="details" rows="4" placeholder="Mowing, cleanup, trimming, mulch, etc."></textarea>
-        </label>
-
-        <button class="btn btn--primary w-100" type="submit">Submit</button>
-        <p class="fineprint">
-          Submits via mailto/text fallback for now—easy to wire to a real form endpoint later.
+    <!-- ABOUT (placeholder) -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Placeholder: Edwards &amp; Sons Lawncare is a local, family-run business focused on reliable scheduling,
+          clean work, and great communication.
         </p>
-      </form>
-    </div>
-  </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+    <!-- GALLERY (placeholder) -->
+    <section class="section section--alt" id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p class="muted">Placeholder: add job photos when ready.</p>
+
+        <div class="gallery">
+          <div class="photo">Photo 1</div>
+          <div class="photo">Photo 2</div>
+          <div class="photo">Photo 3</div>
+          <div class="photo">Photo 4</div>
+          <div class="photo">Photo 5</div>
+          <div class="photo">Photo 6</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Placeholder: update with the real phone/email.</p>
+
+        <div class="c
